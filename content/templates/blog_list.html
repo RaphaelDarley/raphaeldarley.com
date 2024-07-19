@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+</head>
+
+<body>
+
+    <ol>
+        {% for blog in blogs%}
+        <li><a href="/blog/{{blog.title}}">{{blog.title}}</a></li>
+        {% endfor %}
+    </ol>
+
+</body>
+
+</html>
